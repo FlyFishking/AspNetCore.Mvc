@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>460cd7a5-a540-46da-a009-9ea8e1cb876d</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Componet\**" />
+    <Content Remove="Componet\**" />
+    <EmbeddedResource Remove="Componet\**" />
+    <None Remove="Componet\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Repository\RepositoryBulk.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="autofac" Version="4.8.1" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.2" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.7" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.11" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.EFCore\Microsoft.EFCore.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="CtsConfig\log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

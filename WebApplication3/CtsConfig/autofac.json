@@ -1,0 +1,14 @@
+﻿{
+  "modules": [
+    {
+      "type": "Account.Repository.EF.RepositoryModule, Account.Repository.EF"
+    },
+    {
+      "type": "Account.Service.ServiceModule, Account.Service"
+    }
+  ],
+  "WebBrowserFolder": {
+    "wwwroot\\images": "/w32img21",
+    "StaticFiles": "/sim321g2"
+  }
+}

@@ -1,0 +1,11 @@
+﻿{
+  "modules": [
+    {
+      "type": "EFCore.Service.ServiceModule, EFCore.Service"
+    }
+  ],
+  "WebBrowserFolder": {
+    "wwwroot\\images": "/w32img21",
+    "StaticFiles": "/sim321g2"
+  }
+}
